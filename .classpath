@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/log4j.jar"/>
+	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.10-bin.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/jetty-gwt-6.1.22.jar"/>
+	<classpathentry kind="lib" path="lib/commons-fileupload-1.2.1.jar"/>
+	<classpathentry kind="lib" path="lib/mail.jar"/>
+	<classpathentry kind="lib" path="lib/activation.jar"/>
+	<classpathentry kind="lib" path="lib/asm-3.1.jar"/>
+	<classpathentry kind="lib" path="lib/gwt-incubator-20101117-r1766.jar"/>
+	<classpathentry kind="lib" path="lib/spring-data-mongodb-1.0.0.M4.jar" sourcepath="/Users/rcurtis/Downloads/spring-data-document-1.0.0.M4/src/spring-data-mongodb-1.0.0.M4-sources.jar"/>
+	<classpathentry kind="lib" path="lib/mongo-2.6.5.jar"/>
+	<classpathentry kind="lib" path="lib/spring-data-commons-core-1.1.0.RELEASE.jar" sourcepath="/Users/rcurtis/Downloads/spring-data-commons-core-1.1.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.core-3.1.0.RC1.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.jdbc-3.1.0.RC1.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.transaction-3.1.0.RC1.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.beans-3.1.0.RC1.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.context-3.1.0.RC1.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.expression-3.1.0.RC1.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.asm-3.1.0.RC1.jar"/>
+	<classpathentry kind="lib" path="lib/aws-java-sdk-1.2.12.jar" sourcepath="/Users/rcurtis/Downloads/aws-java-sdk-1.2.12/lib/aws-java-sdk-1.2.12-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/Users/rcurtis/Downloads/aws-java-sdk-1.2.12/lib/aws-java-sdk-1.2.12-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/httpclient-4.1.2.jar"/>
+	<classpathentry kind="lib" path="lib/httpcore-4.1.2.jar"/>
+	<classpathentry kind="lib" path="lib/antlr-2.7.7.jar"/>
+	<classpathentry kind="lib" path="lib/stringtemplate-3.2.1.jar"/>
+	<classpathentry kind="con" path="com.google.gwt.eclipse.core.GWT_CONTAINER"/>
+	<classpathentry kind="output" path="war/WEB-INF/classes"/>
+</classpath>

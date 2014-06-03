@@ -1,0 +1,23 @@
+canvas	999
+toolCanvas 999
+mapView 1000
+alerts	2000
+mapMenu	2000
+sliders	2100
+dragging image	10000
+CharacterView	20000
+highest layer = -1000 to 0
+highest layer -1 = -2000 to -1000
+highest layer -2 = -3000 to -2000
+highest layer -n = -(n+1)*1000 to -n*1000
+layer m = n=highest layer - m
+
+mapTable			=(-(highestLayer-currentLayer)*1000)+1
+note	base+999	=(-(highestLayer-z)*1000)+999
+decals  base+1		=(-(highestLayer-z)*1000)+cellY+2
+figures	base+y+2	=(-(highestLayer-z)*1000)+cellY+2
+tiles	base		=-(highestLayer-z)*1000
+
+characterChooser	2000
+gamelistview		2000
+characterview		2000

@@ -1,0 +1,5 @@
+war/WEB-INF/classes/*
+war/WEB-INF/deploy/*
+war/battlemap/*cache*
+war/battlemap/*rpc*
+gwt-unitCache/*

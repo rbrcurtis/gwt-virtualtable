@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="shortcut icon" href="https://mystictriad.com/sites/default/files/MTfavicon.png" type="image/png" />
+    <link type="text/css" rel="stylesheet" href="BattleMap.css">
+    <title>Battle Map</title>
+    <style></style>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.md5.js"></script>
+    <script type="text/javascript" language="javascript" src="battlemap/battlemap.nocache.js"></script>
+    
+    <noscript>
+        OMG stop being a luddite, enable javascript.  This site won't work without it.
+    </noscript>
+    
+  </head>
+  <body style="margin:0px;padding:0px">
+    <iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1' style="position:absolute;width:0;height:0;border:0"></iframe>
+  </body>
+  
+  <script type="text/javascript">
+  	// if someone happens to be looking at this source and is wondering why this is here, it is because this app
+  	// is written in GWT and for some godaweful reason google doesn't see fit to allow you to attach 
+  	// kb event handlers to the window.
+	$(window).bind("keydown keyup keypress", function(e){
+  		$("#kbhandler").trigger(e)
+	})
+  </script>
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-26894353-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  </script>
+</html>

@@ -1,0 +1,12 @@
+S	select tool
+M	multi tool
+R 	rotate tool
+del	delete selected
+c-D	delete selected (notes)
+Q 	up level
+A	down level
+X	cut
+C	copy
+V	paste
+L	layer visibility toggle
+O	object visibility toggle

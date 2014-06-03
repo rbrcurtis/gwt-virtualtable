@@ -1,0 +1,713 @@
+html,body {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.spellSlot,.knownSpell {
+	width: 200px;
+	height: 1.5em;
+	border: 1px solid black;
+	margin: 0px;
+	padding: 0px 5px;
+	font-size: 1em;
+}
+
+.dragOver {
+	background: orange;
+}
+
+.blue { color: #1B6DE0 }
+.red { color: #FF9797 }
+.green { color: #2FA84E }
+.yellow { color: #A5A80F }
+.teal { color: #8DC7BB }
+.orange { color: #d15e20 }
+
+.characterHeader {
+	width: 100%;
+}
+
+.characterHeader td {
+	/* vertical-align: middle !important; */
+}
+
+.characterHeader td div {
+	margin: 0px 0px 0px 2px !important;
+}
+
+.csFigureBox { /* 	display: inline-block; */ /* margin-left: 40px; */
+	
+}
+
+.csFigureBox td {
+	width: 100px;
+	height: 100px;
+	border: 1px solid black;
+}
+
+.characterEquipment {
+	width: 100%;
+}
+
+.characterEquipment .itemBox {
+	width: 98%;
+	border: 1px solid black;
+	margin: 5px;
+	padding: 2px;
+}
+
+.levelBox {
+	width: 20px;
+	text-align: center;
+}
+
+.spellSheet td {
+	height: 1.5em;
+}
+
+.spellSheet table {
+	border-collapse: collapse;
+}
+
+.characterNotes {
+	overflow: hidden;
+	width: 98%;
+	height: 95%;
+}
+
+.gwt-TabLayoutPanelContentContainer>div {
+	overflow: auto !important;
+}
+
+.gwt-TabLayoutPanel .gwt-TabLayoutPanelTabs {
+	
+}
+
+.gwt-TabLayoutPanelContentContainer {
+	border-color: #92c1f0;
+	border-style: solid;
+	border-width: 2px 1px 1px;
+}
+
+.gwt-TabLayoutPanel .gwt-TabLayoutPanelContent {
+	border-color: #92c1f0;
+	border-style: solid;
+	border-width: 1px;
+	overflow: hidden;
+	padding: 6px;
+}
+
+.gwt-TabLayoutPanelTab {
+	margin-left: 6px;
+	padding: 3px 6px 3px 6px;
+	cursor: pointer;
+	cursor: pointer;
+	color: black;
+	font-weight: bold;
+	text-align: center;
+	background: #d0e4f6;
+}
+
+.gwt-TabLayoutPanelTab-selected {
+	cursor: default;
+	background: #92c1f0;
+}
+
+.mapExpandButtonHorizontal {
+	text-align: center;
+	width: 100%;
+	background: white;
+	color: white;
+	/* visibility:hidden; */
+}
+
+#mapBorderPanel td {
+	min-width: 15px;
+}
+
+.mapExpandButtonVertical {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	width: 15px;
+	background: white;
+	color: white;
+	/* visibility:hidden; */
+}
+
+.mapExpandButtonVertical:hover,.mapExpandButtonHorizontal:hover {
+	/* visibility:visible; */
+	background: grey;
+	color: black;
+}
+
+.characterView {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 66.5%;
+	border-right: 1px solid #92C1F0;
+	background: white;
+	z-index: 2000;
+}
+
+.characterChooser {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 33.5%;
+	text-align: center;
+	border-left: 1px solid #92C1F0;
+	text-transform: capitalize;
+	background: white;
+	z-index: 2000;
+}
+
+.characterChooser a {
+	display: block;
+}
+
+.gwt-TabLayoutPanelContentContainer div:nth-child(2) {
+	overflow: hidden !important;
+}
+
+.characterMainPanel {
+	overflow-y: visible !important;
+}
+
+.characterView, .characterView input {
+	text-transform: capitalize;
+}
+
+.hitPointsPanel input[type=text],.hitPointsPanel td {
+	width: 30px;
+	text-align: center;
+	height: .8em;
+}
+
+.characterSheet {
+	
+}
+
+.skillsPanel>tr>td:first-child {
+	text-align: left !important;
+}
+
+.weaponsPanel {
+	border: 1px solid black;
+	margin: 10px;
+}
+
+.weaponsPanel tr:first-child td {
+	font-weight: 700;
+}
+
+.weaponsPanel td,.savingThrowPanel td {
+	text-align: center;
+}
+
+.modifiersPanel input[type=text],.modifiersPanel td {
+	width: 20px;
+	text-align: center;
+}
+
+.characterHeader .gwt-Label {
+	margin: 10px;
+}
+
+.combatStats,.statsPanel,.modifiersPanel {
+	margin: 10px;
+}
+
+.abilityScore,.skillBox,.combatStatsBox,.savingThrow {
+	width: 20px;
+	text-align: center;
+}
+
+.savingThrow {
+	color: #888;
+}
+
+.featsPanel input,.powersPanel input {
+	width: 150px;
+	height: 1.5em;
+	margin: 2px;
+	text-align: center;
+}
+
+.featsPanel td,.powersPanel td {
+	/* height: 2.2em; */
+}
+
+.skillName {
+	text-align: left !important;
+}
+
+.raceFeat,.racePower {
+	background: #99CCFF;
+}
+
+.classFeat,.classPower {
+	background: #EBFFAD;
+}
+
+.levelFeat {
+	background: #FAE6FA;
+}
+
+.extraFeat,.extraPower {
+	background: #D94A6D;
+	font-weight: 700;
+}
+
+#playerPanel {
+	
+}
+
+.playerAvatar {
+	margin: 5px;
+	border: 2px solid;
+}
+
+#zoomSquare {
+	position: absolute;
+	border: 2px dashed red;
+	z-index: 1001;
+}
+
+#dropMenu {
+	display: none;
+	position: absolute;
+	top: 2.5em;
+	left: 0px;
+	background: white;
+	z-index: 2100;
+}
+
+#dropMenu td {
+	border-width: 0px 1px 1px 1px;
+	border-style: solid;
+	border-color: black;
+	padding: 4px;
+}
+
+.chatMenu {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 30px;
+	width: 33.5%;
+}
+
+.chatMenu td {
+	padding: 0px 15px;
+}
+
+#chatPanel {
+	border: 1px solid black;
+	background: white;
+	z-index: 1900;
+	position: fixed;
+	top: 30px;
+	right: 0px;
+	width: 33.5%;
+	margin: 0px;
+}
+
+#chatPanel td {
+	margin: 0px;
+	padding: 0px;
+}
+
+#chatWindow {
+	padding: 0px 0px 0px 10px;
+	width: 100%;
+	overflow-y: scroll;
+}
+
+#chatWindow .gwt-Label {
+	padding-top: 5px;
+}
+
+#chatInput {
+	border-top: 1px solid black;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+
+#toolCanvas {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 999;
+}
+
+#toolPanel {
+	width: 20px;
+	position: fixed;
+	left: 13px;
+	top: 55px;
+	background: white;
+	z-index: 2000;
+}
+
+#layerPanel {
+	width: 20px;
+	position: fixed;
+	left: 13px;
+	top: 155px;
+	background: white;
+	z-index: 2000;
+}
+
+.layerOccupied {
+	background: #AAFAAF !important;
+}
+
+.layerSelected {
+	background: #E89E54 !important;
+}
+
+.toolButton {
+	border: 2px solid black;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	color: black;
+	font-weight: 700;
+	cursor: pointer;
+	display: block;
+	text-decoration: none;
+	background: white;
+}
+
+.toolButton: hover {
+	background: #FFF9D1;
+}
+
+.selectedToolButton {
+	border: 2px solid red !important;
+}
+
+#selectionRing {
+	position: absolute;
+	-moz-border-radius: 90px;
+	border-radius: 90px;
+	box-shadow: 0 0 30px rgba(255, 0, 0, 5);
+	-webkit-box-shadow: 0 0 30px rgba(255, 0, 0, 5);
+	-moz-box-shadow: 0 0 30px rgba(255, 0, 0, 5);
+}
+
+#contextMenu {
+	position: absolute;
+	z-index: 100000;
+	border: 1px solid black;
+	background: white;
+	text-align: center;
+	padding: 4px;
+}
+
+#contextMenu a {
+	text-decoration: none;
+	color: black;
+	margin: 2px;
+}
+
+#contextMenu a: hover {
+	background: yellow;
+	cursor: pointer;
+}
+
+#boundaryPanel {
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+.figure {
+	position: absolute;
+}
+
+.sizeField {
+	width: 20px;
+}
+
+.sizePanel {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.noteDialog div.Caption {
+	background: none repeat scroll 0% 0% white;
+	border-bottom-style: none;
+	padding: 1px;
+}
+
+.note {
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	/* background:#FFFFA1;
+	color: black;
+	z-index: 998; */
+}
+
+.blur {
+	filter: alpha(opacity =   50);
+	-moz-opacity: 0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+}
+
+#AddMapObjectView {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#radioheader {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#formBodyWrapper td {
+	text-align: center;
+}
+
+#formBody td {
+	text-align: left;
+}
+
+.sliderCategoryList {
+	width: 100px;
+}
+
+.smallInput {
+	width: 20px;
+}
+
+#mapTable,#mapTable td {
+	border: 1px solid #FFAB00;
+	/*z-index:-1001 !important;*/
+	position: relative;
+}
+
+#mapTable td {
+	text-align: center;
+	font-size: .7em;
+}
+
+#mapMenu {
+	width: 100%;
+	height: 20px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: white;
+	border: black 1px solid;
+	border-top: 0px;
+	z-index: 2100;
+}
+
+.menuLink,.mapListEntry {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+	display: block;
+	margin: 5px;
+	width: 100%;
+}
+
+#characterSlider,#figureSlider,#tileSlider,#decalSlider {
+	border: 1px solid black;
+	background: white;
+	display: none;
+	z-index: 2000;
+	position: fixed;
+	right: -2px;
+	top: 2.5em;
+	bottom: 4em;
+	overflow-y: scroll;
+	width: 33.5%;
+}
+
+.gwt-DialogBox {
+	display: inline;
+	background: white;
+	z-index: 9999;
+}
+
+#inviter.gwt-DialogBox .Caption {
+	text-align: center;
+}
+
+.menuTextInput {
+	height: 2em;
+	text-align: center;
+}
+
+.menuLabel {
+	padding-left: 5px;
+}
+
+#figurePanel,#tilePanel,#decalPanel {
+	text-align: center;
+	overflow-y: scroll;
+	height: 100%;
+}
+
+.scrollDiv { /* 	padding-bottom: 50px; */
+	
+}
+
+.tagPanel {
+	width: 100%;
+	padding: 10px;
+}
+
+.tagPanel input {
+	width: 90%;
+}
+
+.draggingImage {
+	position: absolute;
+	z-index: 10000;
+}
+
+#characterSlider img,#figureSlider img,#tileSlider img,#decalSlider img {
+	margin: 25px;
+	padding: 5px;
+	border: 2px solid white;
+	height: 100%;
+}
+
+.characterBox {
+	width: 100px;
+	display: inline-block;
+	text-align:center;
+	text-transform: capitalize;
+}
+
+.sliderCloseButton {
+	width: 20px;
+	height: 20px;
+	background: orange;
+	border: 1px solid black;
+	color: white;
+	padding: 0px;
+	text-align: center;
+	cursor: pointer;
+}
+
+#selectFigureViewList {
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	height: 100%;
+}
+
+#selectFigureViewList img {
+	padding: 10px;
+}
+
+.listGamesView {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	background: white;
+	padding: 15px;
+	z-index: 2000;
+	width: 33.5%;
+}
+
+.gameListLink {
+	display: block;
+	text-align: center;
+}
+
+.listGamesView td {
+	text-align: center;
+}
+
+.gwt-Anchor {
+	cursor: pointer;
+}
+
+.selectedCell {
+	background: yellow;
+	filter: alpha(opacity = 50);
+	-moz-opacity: 0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+}
+
+.selectedSliderObject {
+	border: 2px solid red !important;
+}
+
+.selectFigureListImage {
+	cursor: pointer;
+}
+
+#figureCategoryList {
+	
+}
+
+.selectFigureCategory {
+	cursor: pointer;
+	padding: 5px;
+}
+
+.gwt-Hyperlink {
+	cursor: pointer;
+}
+
+#alerts {
+	z-index: 999999;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	height: 4em;
+	color: black;
+	background: white;
+	padding-left: 10px;
+	margin: 0px;
+	border: 1px solid black;
+
+	/* 	visibility: hidden; */
+}
+
+#mapBody { /* overflow: hidden; */
+	
+}
+
+#content {
+	overflow: hidden;
+}
+
+#kbhandler {
+	display: inline;
+	height: 0px;
+	width: 0px;
+}
+
+.decal {
+	
+}
+
+#canvas {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 0;
+}
+
+#mapView {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 1000;
+}
